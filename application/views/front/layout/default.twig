@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+      <title>{{ title }}</title>
+
+      {% include "front/includes/head.twig" %}
+
+      {% block stylesheets %}
+          {% include "front/includes/styles.twig" %}
+      {% endblock %}
+  </head>
+<body>
+<div class="main">
+  {% block content %}
+  {% endblock %}
+</div>
+{% block javascripts %}
+    {% include "front/includes/scripts.twig" %}
+{% endblock %}
+
+</body>
+</html>
